@@ -89,28 +89,23 @@ scripts/check.sh --offline
 
 ### Back Up and Restore the SQLite Database
 
-Create a validated online backup:
+Run these commands from the project root after installing the package:
 
 ```bash
-PYTHONPATH=src python3 -m company_pipeline.cli --database data/nse_unified.sqlite3 db-backup
+# Create a validated backup
+python -m company_pipeline.cli --database data/nse_unified.sqlite3 db-backup
+
+# Specify the backup file
+python -m company_pipeline.cli --database data/nse_unified.sqlite3 db-backup --output data/backups/nse_unified.sqlite3
+
+# Restore, with an automatic safety backup of the current database
+python -m company_pipeline.cli --database data/nse_unified.sqlite3 db-restore data/backups/nse_unified.sqlite3
 ```
 
-Write to a specific location:
+To skip creating the automatic pre-restore backup, add `--no-pre-restore-backup` to the restore command. Only do this if you have another verified copy of the current database.
 
 ```bash
-PYTHONPATH=src python3 -m company_pipeline.cli --database data/nse_unified.sqlite3 db-backup --output data/backups/nse_unified.sqlite3
-```
-
-Restore from a backup. The current database is backed up automatically before restoration:
-
-```bash
-PYTHONPATH=src python3 -m company_pipeline.cli --database data/nse_unified.sqlite3 db-restore data/backups/nse_unified.sqlite3
-```
-
-To skip the automatic pre-restore backup:
-
-```bash
-PYTHONPATH=src python3 -m company_pipeline.cli --database data/nse_unified.sqlite3 db-restore data/backups/nse_unified.sqlite3 --no-pre-restore-backup
+python -m company_pipeline.cli --database data/nse_unified.sqlite3 db-restore data/backups/nse_unified.sqlite3 --no-pre-restore-backup
 ```
 
 ---
