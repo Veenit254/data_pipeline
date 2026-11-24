@@ -1,0 +1,16 @@
+Column Name,Type,Description & Normalization Rule
+record_id,String,Deterministic hash of isin (or normalized_name) + effective_delisting_date + delisting_type.
+company_name,String,Official legal name as stated in the NSE circular/order.
+nse_symbol,String,"Historical NSE ticker symbol (uppercase, trimmed; UNKNOWN if unavailable)."
+isin,String,"12-character ISIN (INE...), primary identifier for cross-year deduplication."
+delisting_type,Enum,"One of: COMPULSORY, VOLUNTARY_EXIT_OFFER, VOLUNTARY_NO_EXIT, AMALGAMATION_MERGER, IBC_NCLT, OTHER."
+order_date,Date (YYYY-MM-DD),Date of Delisting Committee order or exchange approval notice (null if N/A).
+effective_delisting_date,Date (YYYY-MM-DD),Date equity shares ceased to be listed/traded on NSE.
+calendar_year,Integer,4-digit year derived from effective_delisting_date (fallback to order_date).
+financial_year,String,"Indian FY format (e.g., FY2017-18 for dates between 2017-04-01 and 2018-03-31)."
+is_priority_year,Boolean,"true if calendar_year or order_date year is in {2007, 2017, 2020, 2024}, else false."
+regulatory_regime,String,"Applicable framework (e.g., SEBI_2003_Guidelines, SEBI_2009_Regs, SEBI_2021_Regs, SEBI_2024_Amendment)."
+exit_or_fair_value_inr,Float / Null,"Exit price (voluntary) or independent valuer fair value (compulsory) in INR, if disclosed."
+source_url,String,Exact URL where the primary document/circular was discovered or retrieved.
+local_artifact_path,String,Relative path in data/raw/ to the cached circular/sheet/page backing the row.
+confidence_status,Enum,"VERIFIED_PRIMARY (official NSE/SEBI circular/list), CORROBORATED_SECONDARY (reputable financial/legal archive), or NEEDS_REVIEW."

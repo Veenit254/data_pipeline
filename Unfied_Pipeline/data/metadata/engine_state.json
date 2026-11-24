@@ -1,0 +1,134 @@
+{
+ "searxng": {
+  "google cse": {
+   "benched_until": 1795317876.750825,
+   "reason": "Suspended: too many requests",
+   "last_used": 1795376278.263259,
+   "uses": 48,
+   "results": 920,
+   "official": 673,
+   "irrelevant_streak": 0
+  },
+  "brave": {
+   "benched_until": 1795379796.74752,
+   "reason": "too many requests",
+   "last_used": 1795376196.747516,
+   "uses": 4,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  },
+  "duckduckgo": {
+   "benched_until": 1795394177.3573399,
+   "reason": "CAPTCHA",
+   "last_used": 1795372577.357334,
+   "uses": 2,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  },
+  "startpage": {
+   "benched_until": 1795395665.466126,
+   "reason": "Suspended: CAPTCHA",
+   "last_used": 1795374065.466121,
+   "uses": 3,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  },
+  "bing": {
+   "benched_until": 1795395772.012533,
+   "reason": "irrelevant: 3 answers in a row with no relevant result",
+   "last_used": 1795374172.01249,
+   "uses": 10,
+   "results": 50,
+   "official": 3,
+   "irrelevant_streak": 0
+  },
+  "mojeek": {
+   "benched_until": 1795417271.2542112,
+   "reason": "access denied",
+   "last_used": 1795374071.254208,
+   "uses": 3,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 1
+  },
+  "yahoo": {
+   "benched_until": 1795383396.7471051,
+   "reason": "HTTP protocol error",
+   "last_used": 1795376196.747095,
+   "uses": 3,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  },
+  "qwant": {
+   "benched_until": 1795415784.100557,
+   "reason": "Suspended: access denied",
+   "last_used": 1795372584.1005461,
+   "uses": 2,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  },
+  "dogpile": {
+   "benched_until": 1795415784.101322,
+   "reason": "Suspended: access denied",
+   "last_used": 1795372584.101314,
+   "uses": 2,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  },
+  "presearch": {
+   "benched_until": 1795415788.664407,
+   "reason": "Suspended: access denied",
+   "last_used": 1795372588.6643982,
+   "uses": 2,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  },
+  "yep": {
+   "benched_until": 1795377665.4665248,
+   "reason": "Suspended: HTTP error",
+   "last_used": 1795374065.466518,
+   "uses": 3,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  }
+ },
+ "serper": {
+  "serper": {
+   "benched_until": 0,
+   "reason": null,
+   "last_used": 0,
+   "uses": 0,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  }
+ },
+ "brave": {
+  "brave": {
+   "benched_until": 0,
+   "reason": null,
+   "last_used": 0,
+   "uses": 0,
+   "results": 0,
+   "official": 0,
+   "irrelevant_streak": 0
+  }
+ },
+ "_usage": {
+  "searxng": {
+   "day": "2026-11-23",
+   "today": 37,
+   "month": "2026-11",
+   "this_month": 37,
+   "total": 37
+  }
+ }
+}

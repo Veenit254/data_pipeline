@@ -1,0 +1,182 @@
+{
+ "nsearchives.nseindia.com": {
+  "files": 332,
+  "files_with_rows": 83,
+  "rows": 516,
+  "records": 453,
+  "first_fetched": "2026-11-21T10:46:17+00:00",
+  "new": false
+ },
+ "archives.nseindia.com": {
+  "files": 23,
+  "files_with_rows": 5,
+  "rows": 241,
+  "records": 188,
+  "first_fetched": "2026-11-21T10:47:36+00:00",
+  "new": false
+ },
+ "beta.bseindia.com": {
+  "files": 49,
+  "files_with_rows": 15,
+  "rows": 91,
+  "records": 11,
+  "first_fetched": "2026-11-21T10:50:53+00:00",
+  "new": false
+ },
+ "bseindia.com": {
+  "files": 37,
+  "files_with_rows": 3,
+  "rows": 43,
+  "records": 2,
+  "first_fetched": "2026-11-21T10:49:21+00:00",
+  "new": false
+ },
+ "nclt.gov.in": {
+  "files": 5,
+  "files_with_rows": 1,
+  "rows": 1,
+  "records": 1,
+  "first_fetched": "2026-11-21T12:32:25+00:00",
+  "new": false
+ },
+ "sebi.gov.in": {
+  "files": 45,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-21T10:57:20+00:00",
+  "new": false
+ },
+ "nseindia.com": {
+  "files": 29,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-21T10:44:38+00:00",
+  "new": false
+ },
+ "ibbi.gov.in": {
+  "files": 22,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:20+00:00",
+  "new": false
+ },
+ "kaskus.co.id": {
+  "files": 5,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:00+00:00",
+  "new": true
+ },
+ "ijlra.com": {
+  "files": 3,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:00+00:00",
+  "new": true
+ },
+ "en.wikipedia.org": {
+  "files": 3,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:01:15+00:00",
+  "new": true
+ },
+ "ibclaw.in": {
+  "files": 2,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:20+00:00",
+  "new": true
+ },
+ "bsmedia.business-standard.com": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-21T12:32:55+00:00",
+  "new": false
+ },
+ "investopedia.com": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:01:14+00:00",
+  "new": true
+ },
+ "thinkingbridge.in": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:01:17+00:00",
+  "new": true
+ },
+ "economictimes.indiatimes.com": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:01:13+00:00",
+  "new": false
+ },
+ "efiling.nclt.gov.in": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T00:55:37+00:00",
+  "new": false
+ },
+ "corporateprofessionals.com": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:01+00:00",
+  "new": true
+ },
+ "ibc.co.in": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:20+00:00",
+  "new": true
+ },
+ "realty.economictimes.indiatimes.com": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T00:55:55+00:00",
+  "new": false
+ },
+ "geeksforgeeks.org": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:01:17+00:00",
+  "new": true
+ },
+ "ibctamil.com": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:22+00:00",
+  "new": true
+ },
+ "wallstreetmojo.com": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:01:16+00:00",
+  "new": true
+ },
+ "blog.ipleaders.in": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:23+00:00",
+  "new": true
+ },
+ "about.youtube": {
+  "files": 1,
+  "files_with_rows": 0,
+  "rows": 0,
+  "first_fetched": "2026-11-22T19:02:56+00:00",
+  "new": true
+ }
+}

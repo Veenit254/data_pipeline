@@ -1,0 +1,756 @@
+{
+ "queries": {
+  "site:nseindia.com list of delisted companies xls": {
+   "phase": "master",
+   "year_tag": "master",
+   "ts": "2026-11-21T10:46:04+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 16,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 16,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/d3ceafdb56c7fa7d.json",
+    "data/search_cache/c969947ed2c7d3ce.json"
+   ]
+  },
+  "site:nseindia.com delisted companies list": {
+   "phase": "master",
+   "year_tag": "master",
+   "ts": "2026-11-21T10:47:00+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 53,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 53,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/2665c3cd4a2205fd.json",
+    "data/search_cache/ad84b26e9212bfce.json",
+    "data/search_cache/03124cae4ed6517a.json"
+   ]
+  },
+  "NSE delisted companies archive": {
+   "phase": "master",
+   "year_tag": "master",
+   "ts": "2026-11-21T10:48:58+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 49,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 16,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/3c7a1d1990bad9e9.json",
+    "data/search_cache/0760b28033fa4755.json",
+    "data/search_cache/5e67cc45b46d8fe3.json"
+   ]
+  },
+  "site:archives.nseindia.com delisted": {
+   "phase": "master",
+   "year_tag": "master",
+   "ts": "2026-11-21T10:49:42+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 53,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 53,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/efde2bb708096170.json",
+    "data/search_cache/31e18c72f4c5c610.json",
+    "data/search_cache/a5f65404825d1508.json"
+   ]
+  },
+  "site:bseindia.com list of delisted companies": {
+   "phase": "master",
+   "year_tag": "master",
+   "ts": "2026-11-21T10:50:41+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 58,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 58,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/74686a4cb5d25013.json",
+    "data/search_cache/fab0891d963667eb.json",
+    "data/search_cache/31d00d36b723b7c5.json"
+   ]
+  },
+  "site:sebi.gov.in delisting of equity shares regulations": {
+   "phase": "master",
+   "year_tag": "master",
+   "ts": "2026-11-21T10:57:10+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 54,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 54,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/4795ceea338f90b0.json",
+    "data/search_cache/4afe4868a5a1dd10.json",
+    "data/search_cache/49c0499c9bf0e01c.json"
+   ]
+  },
+  "site:nseindia.com delisting circular 2017": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T10:57:53+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 38,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 38,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/6ec221188681b495.json",
+    "data/search_cache/b2dc6a2da4ea52f6.json"
+   ]
+  },
+  "site:nseindia.com compulsory delisting 2017": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T10:58:34+00:00",
+   "run_id": "20261121-161603-53269",
+   "status": "done",
+   "results": 38,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 38,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/47fdae8ec14c35c5.json",
+    "data/search_cache/0ed9961a359883e6.json"
+   ]
+  },
+  "site:nseindia.com voluntary delisting exit offer 2017": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T12:29:52+00:00",
+   "run_id": "20261121-175950-79408",
+   "status": "done",
+   "results": 36,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 36,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/1b9072be6c28d5ee.json",
+    "data/search_cache/94d3cb4407846a52.json"
+   ]
+  },
+  "site:sebi.gov.in delisting order 2017": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T12:30:32+00:00",
+   "run_id": "20261121-175950-79408",
+   "status": "done",
+   "results": 38,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 38,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/a030902508e0eea3.json",
+    "data/search_cache/d9f47b7627247e7f.json"
+   ]
+  },
+  "site:bseindia.com compulsory delisting notice 2017": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T12:31:15+00:00",
+   "run_id": "20261121-175950-79408",
+   "status": "done",
+   "results": 40,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 40,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/b1ffed82db68590b.json",
+    "data/search_cache/874d982178727f0c.json"
+   ]
+  },
+  "NSE voluntary delisting reverse book building 2017 exit price": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T12:31:58+00:00",
+   "run_id": "20261121-175950-79408",
+   "status": "done",
+   "results": 39,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 8,
+   "fetched_ok": 4,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/389c3c676940e430.json",
+    "data/search_cache/a85bd8df03a27947.json"
+   ]
+  },
+  "NCLT resolution plan delisting NSE 2017": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T12:32:18+00:00",
+   "run_id": "20261121-175950-79408",
+   "status": "done",
+   "results": 40,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 23,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/a4699a1022bc3cf6.json",
+    "data/search_cache/c1fbb6af82dc0796.json"
+   ]
+  },
+  "amalgamation scheme delisted from NSE 2017": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T12:35:40+00:00",
+   "run_id": "20261121-175950-79408",
+   "status": "done",
+   "results": 20,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "google cse",
+    "startpage"
+   ],
+   "candidate_urls": 5,
+   "fetched_ok": 4,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/5786ed51c9e028b3.json",
+    "data/search_cache/b2a5efdc8254a725.json"
+   ]
+  },
+  "NSE compulsory delisting 2017 shell companies": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-21T13:24:31+00:00",
+   "run_id": "20261121-185431-90039",
+   "status": "done",
+   "results": 36,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "startpage"
+   ],
+   "candidate_urls": 16,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/6c0b6e79f0704cf6.json",
+    "data/search_cache/39e4d199e234458a.json"
+   ]
+  },
+  "exchanges delist companies 2017 compulsory": {
+   "phase": "priority_2017",
+   "year_tag": "2017",
+   "ts": "2026-11-22T00:45:16+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 20,
+   "unresponsive_engines": [
+    "brave",
+    "duckduckgo",
+    "mojeek",
+    "startpage"
+   ],
+   "candidate_urls": 5,
+   "fetched_ok": 1,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/308a4feea0d9ee77.json",
+    "data/search_cache/743079aef4db6141.json"
+   ]
+  },
+  "site:nseindia.com delisting circular 2020": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T00:45:58+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 47,
+   "unresponsive_engines": [
+    "yahoo",
+    "yep"
+   ],
+   "candidate_urls": 37,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/b1cbc3564be07912.json",
+    "data/search_cache/72a45ba8d495632b.json"
+   ]
+  },
+  "site:nseindia.com compulsory delisting 2020": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T00:47:10+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 39,
+   "unresponsive_engines": [],
+   "candidate_urls": 39,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/6e2c2580992f2056.json",
+    "data/search_cache/29907190bd795675.json"
+   ]
+  },
+  "site:nseindia.com voluntary delisting exit offer 2020": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T00:48:30+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 40,
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/ead6da3215b66ddf.json",
+    "data/search_cache/f71e02524f7e23c9.json"
+   ]
+  },
+  "site:sebi.gov.in delisting order 2020": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T00:49:41+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 38,
+   "unresponsive_engines": [],
+   "candidate_urls": 38,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/701e594a03ad62de.json",
+    "data/search_cache/081884ba567050e8.json"
+   ]
+  },
+  "site:bseindia.com compulsory delisting notice 2020": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T00:50:46+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 39,
+   "unresponsive_engines": [],
+   "candidate_urls": 39,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/f8ab49a06655ab73.json",
+    "data/search_cache/85d62c5959ba4288.json"
+   ]
+  },
+  "NSE voluntary delisting reverse book building 2020 exit price": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T00:54:38+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 36,
+   "unresponsive_engines": [],
+   "candidate_urls": 5,
+   "fetched_ok": 1,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/6ea27233a52c762c.json",
+    "data/search_cache/4906164f0fada982.json"
+   ]
+  },
+  "NCLT resolution plan delisting NSE 2020": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T00:55:19+00:00",
+   "run_id": "20261122-061515-6664",
+   "status": "done",
+   "results": 40,
+   "unresponsive_engines": [],
+   "candidate_urls": 16,
+   "fetched_ok": 8,
+   "quarantined": 0,
+   "cache_files": [
+    "data/search_cache/7320c399548cf0e2.json",
+    "data/search_cache/c9b98993bc2a678c.json"
+   ]
+  },
+  "amalgamation scheme delisted from NSE 2020": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T19:01:02+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 30,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [
+    "mojeek"
+   ],
+   "candidate_urls": 30,
+   "filed_new": 27,
+   "filed_pending": 8,
+   "cache_files": [
+    "data/search_cache/c8cc128adf458459.json",
+    "data/search_cache/61a111c1983f38fd.json"
+   ]
+  },
+  "delisting COVID 2020 NSE SEBI relaxation": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T19:01:48+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 50,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 50,
+   "filed_new": 39,
+   "filed_pending": 6,
+   "cache_files": [
+    "data/search_cache/da77639b33d2cdcf.json",
+    "data/search_cache/7b00cd07694293c3.json"
+   ]
+  },
+  "IBC delisting 2020 NSE": {
+   "phase": "priority_2020",
+   "year_tag": "2020",
+   "ts": "2026-11-22T19:02:14+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 49,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 47,
+   "filed_new": 24,
+   "filed_pending": 7,
+   "cache_files": [
+    "data/search_cache/7a218dd47a89ca45.json",
+    "data/search_cache/8fe6ed1ade31b86c.json"
+   ]
+  },
+  "site:nseindia.com delisting circular 2024": {
+   "phase": "priority_2024",
+   "year_tag": "2024",
+   "ts": "2026-11-22T19:02:47+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 49,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 46,
+   "filed_new": 27,
+   "filed_pending": 6,
+   "cache_files": [
+    "data/search_cache/06ae81966c43ccd1.json",
+    "data/search_cache/4df56fb28b361e72.json"
+   ]
+  },
+  "site:nseindia.com compulsory delisting 2024": {
+   "phase": "priority_2024",
+   "year_tag": "2024",
+   "ts": "2026-11-22T19:03:27+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 39,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 10,
+   "filed_pending": 2,
+   "cache_files": [
+    "data/search_cache/4f81c2dc58580278.json",
+    "data/search_cache/8e2d43a3db0f654c.json"
+   ]
+  },
+  "site:nseindia.com voluntary delisting exit offer 2024": {
+   "phase": "priority_2024",
+   "year_tag": "2024",
+   "ts": "2026-11-22T19:03:51+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 40,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 13,
+   "filed_pending": 1,
+   "cache_files": [
+    "data/search_cache/085009d5c298e471.json",
+    "data/search_cache/5262c188cffbd93d.json"
+   ]
+  },
+  "site:sebi.gov.in delisting order 2024": {
+   "phase": "priority_2024",
+   "year_tag": "2024",
+   "ts": "2026-11-22T19:04:29+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 40,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 26,
+   "filed_pending": 4,
+   "cache_files": [
+    "data/search_cache/d6a0f464ed5e6658.json",
+    "data/search_cache/44381f43b5c2da85.json"
+   ]
+  },
+  "site:bseindia.com compulsory delisting notice 2024": {
+   "phase": "priority_2024",
+   "year_tag": "2024",
+   "ts": "2026-11-22T19:05:01+00:00",
+   "run_id": "20261123-003102-17928",
+   "status": "done",
+   "results": 39,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 16,
+   "filed_pending": 2,
+   "cache_files": [
+    "data/search_cache/5192083b24b521d7.json",
+    "data/search_cache/c8c520ae660bb672.json"
+   ]
+  },
+  "NSE delisted companies list 2006": {
+   "phase": "historical_proof",
+   "year_tag": "2006",
+   "ts": "2026-11-22T19:33:12+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 37,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 38,
+   "filed_new": 24,
+   "filed_pending": 3,
+   "cache_files": [
+    "data/search_cache/d8806345ba0f9d99.json",
+    "data/search_cache/9fc6314d8cc14cb8.json"
+   ]
+  },
+  "compulsory delisting order 2006 site:nseindia.com": {
+   "phase": "historical_proof",
+   "year_tag": "2006",
+   "ts": "2026-11-22T19:33:52+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 40,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 27,
+   "filed_pending": 1,
+   "cache_files": [
+    "data/search_cache/980812da869a09ff.json",
+    "data/search_cache/ab1a52c0e2bbf0b1.json"
+   ]
+  },
+  "BSE delisting notice 2006 site:bseindia.com": {
+   "phase": "historical_proof",
+   "year_tag": "2006",
+   "ts": "2026-11-22T19:34:31+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 38,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 30,
+   "filed_pending": 6,
+   "cache_files": [
+    "data/search_cache/d18b3dd5dbb2a027.json",
+    "data/search_cache/effadabfb807172e.json"
+   ]
+  },
+  "SEBI order delisting 2006": {
+   "phase": "historical_proof",
+   "year_tag": "2006",
+   "ts": "2026-11-22T19:35:16+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 40,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 30,
+   "filed_pending": 6,
+   "cache_files": [
+    "data/search_cache/6c8261cfb7b1fd31.json",
+    "data/search_cache/5a7abf4e2635ae8d.json"
+   ]
+  },
+  "voluntary delisting exit offer public announcement 2006": {
+   "phase": "historical_proof",
+   "year_tag": "2006",
+   "ts": "2026-11-22T19:35:56+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 39,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 26,
+   "filed_pending": 3,
+   "cache_files": [
+    "data/search_cache/26f2b08988c783e1.json",
+    "data/search_cache/d4a763f762e1a1df.json"
+   ]
+  },
+  "NSE delisted companies list 2007": {
+   "phase": "historical_proof",
+   "year_tag": "2007",
+   "ts": "2026-11-22T19:36:36+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 37,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 35,
+   "filed_new": 13,
+   "filed_pending": 2,
+   "cache_files": [
+    "data/search_cache/bbd0c4934b32c08b.json",
+    "data/search_cache/995dec2a7d192732.json"
+   ]
+  },
+  "compulsory delisting order 2007 site:nseindia.com": {
+   "phase": "historical_proof",
+   "year_tag": "2007",
+   "ts": "2026-11-22T19:37:13+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 38,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 21,
+   "filed_pending": 3,
+   "cache_files": [
+    "data/search_cache/5c1ebe9d2a760a0f.json",
+    "data/search_cache/39e865e389c92680.json"
+   ]
+  },
+  "BSE delisting notice 2007 site:bseindia.com": {
+   "phase": "historical_proof",
+   "year_tag": "2007",
+   "ts": "2026-11-22T19:37:54+00:00",
+   "run_id": "20261123-010310-27510",
+   "status": "done",
+   "results": 35,
+   "providers": [
+    "searxng"
+   ],
+   "unresponsive_engines": [],
+   "candidate_urls": 40,
+   "filed_new": 21,
+   "filed_pending": 2,
+   "cache_files": [
+    "data/search_cache/55fbb4ff3ceccc65.json",
+    "data/search_cache/aaad80a246d5f676.json"
+   ]
+  }
+ },
+ "blocked_domains": [],
+ "disk_warn_tier": 0,
+ "engines_suspended_until": 1795315558.852322,
+ "deferred_urls": []
+}

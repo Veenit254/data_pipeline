@@ -1,0 +1,3 @@
+BLOCKED by tool guard: reading that file needs the user's approval, so it was not read.
+Source code (scripts/, tests/), raw downloads (data/raw/) and logs of agent sessions are off limits.
+Use the scripts' JSON output instead: collect.py --dry-run, status_report.py --json, inspect_artifact.py <path>.

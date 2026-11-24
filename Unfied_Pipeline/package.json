@@ -1,0 +1,10 @@
+{
+  "devDependencies": { "cline": "3.0.75" },
+  "overrides": {
+    "@fastify/busboy": "^3.2.6",
+    "@opentelemetry/core": "^2.12.1",
+    "@simple-git/argv-parser": "^2.0.1",
+    "simple-git": "^4.0.1",
+    "dify-ai-provider": { "undici": "^6.29.1" }
+  }
+}

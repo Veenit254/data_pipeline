@@ -1,0 +1,506 @@
+{
+  "_comment": "Edit freely. collect.py runs phases in this order and skips queries already completed (tracked in data/metadata/collection_state.json). Add queries to fill gaps. disk: warn when data/ passes warn_data_gb (and every warn_step_gb after), stop when free space < min_free_gb.",
+  "fetch_domains": [
+    "nseindia.com",
+    "sebi.gov.in",
+    "bseindia.com",
+    "ibbi.gov.in",
+    "nclt.gov.in",
+    "business-standard.com",
+    "economictimes.indiatimes.com",
+    "moneycontrol.com",
+    "livemint.com",
+    "thehindubusinessline.com",
+    "financialexpress.com",
+    "web.archive.org",
+    "archive.org"
+  ],
+  "_comment_sources": "open_web: fetch search results from ANY website (not only fetch_domains), except deny_domains. fetch_domains are the known sources: their links are harvested from any page, and records from them rank higher. The agent may append productive new websites (data/metadata/domain_registry.json, new=true, rows>0) to fetch_domains. domain_limits: requests per collect run and pause (seconds) before each request; URLs over budget are deferred to later --harvest-only runs. NSE rate-limits hard, so it gets few requests and long pauses.",
+  "open_web": true,
+  "deny_domains": [
+    "youtube.com",
+    "facebook.com",
+    "twitter.com",
+    "x.com",
+    "instagram.com",
+    "linkedin.com",
+    "reddit.com",
+    "quora.com",
+    "pinterest.com",
+    "t.me",
+    "telegram.me",
+    "whatsapp.com",
+    "play.google.com",
+    "apps.apple.com",
+    "steamcommunity.com",
+    "tiktok.com"
+  ],
+  "domain_limits": {
+    "nseindia.com": {
+      "max_per_run": 12,
+      "delay_s": [
+        10,
+        20
+      ]
+    },
+    "bseindia.com": {
+      "max_per_run": 20,
+      "delay_s": [
+        5,
+        10
+      ]
+    },
+    "sebi.gov.in": {
+      "max_per_run": 20,
+      "delay_s": [
+        4,
+        8
+      ]
+    },
+    "default": {
+      "max_per_run": 15,
+      "delay_s": [
+        2,
+        5
+      ]
+    },
+    "archive.org": {
+      "max_per_run": 20,
+      "delay_s": [
+        3,
+        6
+      ]
+    }
+  },
+  "fetch_limit_per_query": 8,
+  "_comment_run_limits": "Caps per run (scripts/run_limits.py). mode: capped | unlimited | ask (asks on a terminal only; unattended runs use the caps). 0, null or \"all\" = no limit. collect.py flags override: --max-files, --max-companies, --max-docs-per-company, --unlimited.",
+  "run_limits": {
+    "mode": "capped",
+    "max_files": 60,
+    "max_companies": 25,
+    "max_docs_per_company": 5
+  },
+  "_comment_focus": "Historical focus (scripts/historical.py): companies delisted this many years ago. Proof from official/archive records first, then supporting documents per company; official and archive sources rank ahead of news.",
+  "focus": {
+    "years_ago": [
+      15,
+      20
+    ]
+  },
+  "harvest_limit_per_page": 20,
+  "block_domain_after_failures": 3,
+  "network_probe_hosts": ["1.1.1.1:443", "8.8.8.8:443", "9.9.9.9:443"],
+  "disk": {
+    "warn_data_gb": 5,
+    "warn_step_gb": 5,
+    "min_free_gb": 20
+  },
+  "search": {
+    "_comment": "Search providers (scripts/web_search.py, scripts/search_providers/): used in 'providers' order, the next one only when the previous is used up (units benched, daily/monthly limit, no API key, down). SearXNG's units are its engines (enable them in searxng/settings.yml); each API is one unit. Failing or junk-returning units are benched cooldown_min[reason] minutes. API keys go in .env or ~/.config/nse-unified-pipeline/keys.env, never here.",
+    "providers": [
+      "searxng",
+      "serper",
+      "brave"
+    ],
+    "provider_settings": {
+      "searxng": {
+        "url": "http://localhost:8082",
+        "engines": [
+          "google cse",
+          "brave",
+          "duckduckgo",
+          "startpage",
+          "bing",
+          "mojeek",
+          "yahoo",
+          "qwant",
+          "dogpile",
+          "presearch",
+          "yep"
+        ],
+        "engines_per_query": 2
+      },
+      "serper": {
+        "gl": "in",
+        "hl": "en",
+        "num": 10,
+        "daily_limit": 50,
+        "monthly_limit": null
+      },
+      "brave": {
+        "country": "IN",
+        "search_lang": "en",
+        "count": 20,
+        "daily_limit": 50,
+        "monthly_limit": 1900
+      }
+    },
+    "cooldown_min": {
+      "too many requests": 60,
+      "suspended": 60,
+      "captcha": 360,
+      "access denied": 720,
+      "irrelevant": 360,
+      "default": 120,
+      "quota": 1440
+    },
+    "irrelevant_after": 3,
+    "query_delay_s": [
+      20,
+      40
+    ]
+  },
+  "phases": [
+    {
+      "name": "master",
+      "year_tag": "master",
+      "pages": 3,
+      "queries": [
+        "site:nseindia.com list of delisted companies xls",
+        "site:nseindia.com delisted companies list",
+        "NSE delisted companies archive",
+        "site:archives.nseindia.com delisted",
+        "site:bseindia.com list of delisted companies",
+        "site:sebi.gov.in delisting of equity shares regulations"
+      ]
+    },
+    {
+      "name": "priority_2017",
+      "year_tag": "2017",
+      "pages": 2,
+      "queries": [
+        "site:nseindia.com delisting circular 2017",
+        "site:nseindia.com compulsory delisting 2017",
+        "site:nseindia.com voluntary delisting exit offer 2017",
+        "site:sebi.gov.in delisting order 2017",
+        "site:bseindia.com compulsory delisting notice 2017",
+        "NSE voluntary delisting reverse book building 2017 exit price",
+        "NCLT resolution plan delisting NSE 2017",
+        "amalgamation scheme delisted from NSE 2017",
+        "NSE compulsory delisting 2017 shell companies",
+        "exchanges delist companies 2017 compulsory"
+      ]
+    },
+    {
+      "name": "priority_2020",
+      "year_tag": "2020",
+      "pages": 2,
+      "queries": [
+        "site:nseindia.com delisting circular 2020",
+        "site:nseindia.com compulsory delisting 2020",
+        "site:nseindia.com voluntary delisting exit offer 2020",
+        "site:sebi.gov.in delisting order 2020",
+        "site:bseindia.com compulsory delisting notice 2020",
+        "NSE voluntary delisting reverse book building 2020 exit price",
+        "NCLT resolution plan delisting NSE 2020",
+        "amalgamation scheme delisted from NSE 2020",
+        "delisting COVID 2020 NSE SEBI relaxation",
+        "IBC delisting 2020 NSE"
+      ]
+    },
+    {
+      "name": "priority_2024",
+      "year_tag": "2024",
+      "pages": 2,
+      "queries": [
+        "site:nseindia.com delisting circular 2024",
+        "site:nseindia.com compulsory delisting 2024",
+        "site:nseindia.com voluntary delisting exit offer 2024",
+        "site:sebi.gov.in delisting order 2024",
+        "site:bseindia.com compulsory delisting notice 2024",
+        "NSE voluntary delisting reverse book building 2024 exit price",
+        "NCLT resolution plan delisting NSE 2024",
+        "amalgamation scheme delisted from NSE 2024",
+        "SEBI delisting amendment 2024 fixed price NSE",
+        "NSE delisting 2024 counter offer"
+      ]
+    },
+    {
+      "name": "priority_2007",
+      "year_tag": "2007",
+      "pages": 2,
+      "queries": [
+        "site:nseindia.com delisting circular 2007",
+        "site:nseindia.com compulsory delisting 2007",
+        "site:nseindia.com voluntary delisting exit offer 2007",
+        "site:sebi.gov.in delisting order 2007",
+        "site:bseindia.com compulsory delisting notice 2007",
+        "NSE voluntary delisting reverse book building 2007 exit price",
+        "NCLT resolution plan delisting NSE 2007",
+        "amalgamation scheme delisted from NSE 2007",
+        "SEBI delisting guidelines 2003 NSE 2007",
+        "NSE delisted securities 2007"
+      ]
+    },
+    {
+      "name": "archive",
+      "year_tag": "per_query",
+      "pages": 1,
+      "queries": [
+        {
+          "q": "site:nseindia.com delisting 2006",
+          "year_tag": "2006"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2006",
+          "year_tag": "2006"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2006",
+          "year_tag": "2006"
+        },
+        {
+          "q": "site:nseindia.com delisting 2008",
+          "year_tag": "2008"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2008",
+          "year_tag": "2008"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2008",
+          "year_tag": "2008"
+        },
+        {
+          "q": "site:nseindia.com delisting 2009",
+          "year_tag": "2009"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2009",
+          "year_tag": "2009"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2009",
+          "year_tag": "2009"
+        },
+        {
+          "q": "site:nseindia.com delisting 2010",
+          "year_tag": "2010"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2010",
+          "year_tag": "2010"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2010",
+          "year_tag": "2010"
+        },
+        {
+          "q": "site:nseindia.com delisting 2011",
+          "year_tag": "2011"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2011",
+          "year_tag": "2011"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2011",
+          "year_tag": "2011"
+        },
+        {
+          "q": "site:nseindia.com delisting 2012",
+          "year_tag": "2012"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2012",
+          "year_tag": "2012"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2012",
+          "year_tag": "2012"
+        },
+        {
+          "q": "site:nseindia.com delisting 2013",
+          "year_tag": "2013"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2013",
+          "year_tag": "2013"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2013",
+          "year_tag": "2013"
+        },
+        {
+          "q": "site:nseindia.com delisting 2014",
+          "year_tag": "2014"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2014",
+          "year_tag": "2014"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2014",
+          "year_tag": "2014"
+        },
+        {
+          "q": "site:nseindia.com delisting 2015",
+          "year_tag": "2015"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2015",
+          "year_tag": "2015"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2015",
+          "year_tag": "2015"
+        },
+        {
+          "q": "site:nseindia.com delisting 2016",
+          "year_tag": "2016"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2016",
+          "year_tag": "2016"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2016",
+          "year_tag": "2016"
+        },
+        {
+          "q": "site:nseindia.com delisting 2018",
+          "year_tag": "2018"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2018",
+          "year_tag": "2018"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2018",
+          "year_tag": "2018"
+        },
+        {
+          "q": "site:nseindia.com delisting 2019",
+          "year_tag": "2019"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2019",
+          "year_tag": "2019"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2019",
+          "year_tag": "2019"
+        },
+        {
+          "q": "site:nseindia.com delisting 2021",
+          "year_tag": "2021"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2021",
+          "year_tag": "2021"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2021",
+          "year_tag": "2021"
+        },
+        {
+          "q": "site:nseindia.com delisting 2022",
+          "year_tag": "2022"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2022",
+          "year_tag": "2022"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2022",
+          "year_tag": "2022"
+        },
+        {
+          "q": "site:nseindia.com delisting 2023",
+          "year_tag": "2023"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2023",
+          "year_tag": "2023"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2023",
+          "year_tag": "2023"
+        },
+        {
+          "q": "site:nseindia.com delisting 2025",
+          "year_tag": "2025"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2025",
+          "year_tag": "2025"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2025",
+          "year_tag": "2025"
+        },
+        {
+          "q": "site:nseindia.com delisting 2026",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com compulsory delisting 2026",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:sebi.gov.in delisting order 2026",
+          "year_tag": "2026"
+        }
+      ]
+    },
+    {
+      "name": "agent_added",
+      "year_tag": "per_query",
+      "pages": 1,
+      "queries": [
+        {
+          "q": "site:nseindia.com \"3rd Rock Multimedia Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"AJR Infra and Tolling Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"ATN International Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Arcotech Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"BDR Buildcon Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Bright Solar Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Debock Industries Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Dharani Sugars & Chemicals Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Eros International Media Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"GIR Natureview Resorts Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Sahaj Fashions Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Shree Ram Proteins Limited\" delisting order",
+          "year_tag": "2026"
+        },
+        {
+          "q": "site:nseindia.com \"Techindia Nirman Limited\" delisting order",
+          "year_tag": "2026"
+        }
+      ]
+    }
+  ]
+}

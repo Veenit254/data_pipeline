@@ -1,0 +1,32 @@
+# SearXNG settings for the NSE collector (mounted read-only by docker-compose.yml).
+# Docs: https://docs.searxng.org/admin/settings/
+# The secret key is NOT stored here: SearXNG reads it from the SEARXNG_SECRET environment
+# variable, which docker compose takes from the git-ignored .env file (see .env.example).
+
+use_default_settings: true
+
+server:
+  secret_key: "set-via-SEARXNG_SECRET"  # overridden by the SEARXNG_SECRET env var
+  image_proxy: true
+
+search:
+  formats:   # json is required: scripts/search_providers/searxng.py calls /search?format=json
+    - html
+    - json
+
+# Extra web engines so the collector can rotate between them (config/query_plan.json "search.engines").
+engines:
+  - name: bing
+    disabled: false
+  - name: yahoo
+    disabled: false
+  - name: mojeek
+    disabled: false
+  - name: qwant
+    disabled: false
+  - name: dogpile
+    disabled: false
+  - name: presearch
+    disabled: false
+  - name: yep
+    disabled: false

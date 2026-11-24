@@ -1,0 +1,46 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+data/companies.sqlite3
+data/nse_unified.sqlite3
+
+# Node (Cline CLI dev dependency)
+node_modules/
+
+# Reference repos (separate git clones; re-clone with the commands in README)
+vendor/
+
+# Downloaded / bulky artifacts — reproducible via the pipeline
+data/search_cache/*
+data/raw/**/*
+data/quarantine/*
+data/processed/parsed/*
+data/metadata/*.tmp
+data/docket.sqlite*
+!data/**/.gitkeep
+!data/raw/*/
+
+# High-volume runtime logs. Tracked instead: logs/fetch_manifest.jsonl (provenance),
+# logs/runs/*.json (per-run summaries), data/metadata/ (cumulative metadata).
+logs/agent_run.log
+logs/events.jsonl
+logs/tool_guard.jsonl
+logs/agent_sessions/*
+!logs/agent_sessions/.gitkeep
+logs/jobs/
+data/metadata/job.json
+
+# OS
+.DS_Store
+
+# Test caches
+.pytest_cache/
+logs/.issues.lock
+data/processed/ocr/
+
+# Local secrets: SearXNG secret, search API keys (template: .env.example)
+.env
+.env.*
+!.env.example

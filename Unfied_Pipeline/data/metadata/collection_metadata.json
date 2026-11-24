@@ -1,0 +1,445 @@
+{
+ "generated_at": "2026-11-24T03:57:06+00:00",
+ "indicators": {
+  "records_total": 409,
+  "priority_year_records": 124,
+  "verified_primary_pct": 99.5,
+  "needs_review": 2,
+  "priority_grid_coverage_pct": 40.0,
+  "query_plan_complete_pct": 28.2,
+  "queries_done": 31,
+  "queries_total": 110,
+  "fetch_success_rate_pct": 97.8,
+  "artifacts_downloaded": 568,
+  "artifacts_with_rows": 107,
+  "artifacts_zero_rows": 220,
+  "artifacts_irrelevant": 241,
+  "blocked_domains": 0,
+  "docket": {
+   "by_status": {
+    "dead": 12,
+    "failed": 1,
+    "parked": 1543,
+    "parsed": 568
+   },
+   "fetch_ready_now": 0,
+   "awaiting_parse": 0,
+   "waiting_on_blocked_domain": 0,
+   "evidence_unfetched": 498,
+   "parsed_zero_rows_relevant": 200,
+   "historical": {
+    "window": [
+     2006,
+     2011
+    ],
+    "companies": 23,
+    "proven": 23,
+    "unproven": 0,
+    "with_supporting_docs": 0
+   }
+  },
+  "isin_completeness_pct": 0.2,
+  "last_run": null,
+  "agent_sessions": 0,
+  "proposed_delisting_leads": 14,
+  "bse_only_delistings": 107,
+  "source_domains": 25,
+  "new_source_domains": 13,
+  "new_domains_with_rows": [],
+  "audit_errors": 0,
+  "audit_warnings": 89,
+  "disk": {
+   "data_gb": 1.0,
+   "free_gb": 324.0,
+   "level": "ok",
+   "warn_tier": 0,
+   "warn_data_gb": 5.0,
+   "warn_step_gb": 5.0,
+   "min_free_gb": 20.0
+  }
+ },
+ "queries": {
+  "phases": {
+   "master": {
+    "total": 6,
+    "done": 6,
+    "no_results": 0,
+    "failed": 0,
+    "pending": 0,
+    "complete_pct": 100.0
+   },
+   "priority_2017": {
+    "total": 10,
+    "done": 10,
+    "no_results": 0,
+    "failed": 0,
+    "pending": 0,
+    "complete_pct": 100.0
+   },
+   "priority_2020": {
+    "total": 10,
+    "done": 10,
+    "no_results": 0,
+    "failed": 0,
+    "pending": 0,
+    "complete_pct": 100.0
+   },
+   "priority_2024": {
+    "total": 10,
+    "done": 5,
+    "no_results": 0,
+    "failed": 0,
+    "pending": 5,
+    "complete_pct": 50.0
+   },
+   "priority_2007": {
+    "total": 10,
+    "done": 0,
+    "no_results": 0,
+    "failed": 0,
+    "pending": 10,
+    "complete_pct": 0.0
+   },
+   "archive": {
+    "total": 51,
+    "done": 0,
+    "no_results": 0,
+    "failed": 0,
+    "pending": 51,
+    "complete_pct": 0.0
+   },
+   "agent_added": {
+    "total": 13,
+    "done": 0,
+    "no_results": 0,
+    "failed": 0,
+    "pending": 13,
+    "complete_pct": 0.0
+   }
+  },
+  "adhoc_queries": 8,
+  "blocked_domains": [],
+  "docket": {
+   "generated_at": "2026-11-22T19:39:27+00:00",
+   "total": 2124,
+   "by_status": {
+    "dead": 12,
+    "failed": 1,
+    "parked": 1543,
+    "parsed": 568
+   },
+   "by_kind": {
+    "harvested": 1120,
+    "search": 1004
+   },
+   "fetch_ready_now": 0,
+   "waiting_on_blocked_domain": 0,
+   "awaiting_parse": 0,
+   "parsed_zero_rows_relevant": 200,
+   "evidence_unfetched": 498,
+   "blocked_domains": [],
+   "top_pending_domains": [
+    {
+     "domain": "static.nseindia.com",
+     "n": 1
+    }
+   ],
+   "dead_reasons": [
+    {
+     "reason": "http 404",
+     "n": 8
+    },
+    {
+     "reason": "http 403",
+     "n": 2
+    },
+    {
+     "reason": "downloaded file missing",
+     "n": 2
+    }
+   ],
+   "historical": {
+    "window": [
+     2006,
+     2011
+    ],
+    "companies": 23,
+    "proven": 23,
+    "unproven": 0,
+    "with_supporting_docs": 0
+   }
+  }
+ },
+ "fetch": {
+  "attempts": 583,
+  "ok": 570,
+  "quarantined": 13,
+  "success_rate_pct": 97.8,
+  "total_mb": 994.62,
+  "by_domain": {
+   "nsearchives.nseindia.com": {
+    "ok": 334,
+    "bytes": 576593451,
+    "quarantined": 6
+   },
+   "beta.bseindia.com": {
+    "ok": 49,
+    "bytes": 119541621,
+    "quarantined": 1
+   },
+   "archives.nseindia.com": {
+    "ok": 23,
+    "bytes": 102251572
+   },
+   "bseindia.com": {
+    "ok": 37,
+    "bytes": 85941089,
+    "quarantined": 1
+   },
+   "sebi.gov.in": {
+    "ok": 45,
+    "bytes": 50511884
+   },
+   "ibbi.gov.in": {
+    "ok": 22,
+    "bytes": 25397428
+   },
+   "bsmedia.business-standard.com": {
+    "ok": 1,
+    "bytes": 11126364
+   },
+   "nseindia.com": {
+    "ok": 29,
+    "bytes": 10146048
+   },
+   "nclt.gov.in": {
+    "ok": 5,
+    "bytes": 3739666
+   },
+   "ibclaw.in": {
+    "ok": 2,
+    "bytes": 2503735
+   },
+   "en.wikipedia.org": {
+    "ok": 3,
+    "bytes": 2011359
+   },
+   "ijlra.com": {
+    "ok": 3,
+    "bytes": 808110
+   },
+   "investopedia.com": {
+    "ok": 1,
+    "bytes": 697304
+   },
+   "thinkingbridge.in": {
+    "ok": 1,
+    "bytes": 421536
+   },
+   "wallstreetmojo.com": {
+    "ok": 1,
+    "bytes": 411553
+   },
+   "kaskus.co.id": {
+    "ok": 5,
+    "bytes": 406809
+   },
+   "corporateprofessionals.com": {
+    "ok": 1,
+    "bytes": 385509
+   },
+   "efiling.nclt.gov.in": {
+    "ok": 1,
+    "bytes": 317125
+   },
+   "realty.economictimes.indiatimes.com": {
+    "ok": 1,
+    "bytes": 299502
+   },
+   "ibctamil.com": {
+    "ok": 1,
+    "bytes": 295728
+   },
+   "blog.ipleaders.in": {
+    "ok": 1,
+    "bytes": 285870
+   },
+   "geeksforgeeks.org": {
+    "ok": 1,
+    "bytes": 269515
+   },
+   "economictimes.indiatimes.com": {
+    "ok": 1,
+    "bytes": 147391
+   },
+   "about.youtube": {
+    "ok": 1,
+    "bytes": 96231
+   },
+   "dictionary.cambridge.org": {
+    "quarantined": 1,
+    "bytes": 5881
+   },
+   "merriam-webster.com": {
+    "quarantined": 1,
+    "bytes": 5856
+   },
+   "ibc.co.in": {
+    "ok": 1,
+    "bytes": 4860
+   },
+   "static.nseindia.com": {
+    "quarantined": 3,
+    "bytes": 0
+   }
+  },
+  "by_http_status": {
+   "200": 570,
+   "404": 8,
+   "None": 3,
+   "403": 2
+  },
+  "by_content_type": {
+   "text/html": 104,
+   "application/pdf": 447,
+   "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": 6,
+   "application/x-zip-compressed": 20,
+   "unknown": 3,
+   "application/vnd.ms-excel": 1,
+   "text/csv": 2
+  }
+ },
+ "artifacts": {
+  "total": 568,
+  "by_bucket": {
+   "archive_2006_2026": 21,
+   "master_lists": 361,
+   "priority_2007": 7,
+   "priority_2017": 74,
+   "priority_2020": 89,
+   "priority_2024": 16
+  },
+  "parsed": 568,
+  "rows_extracted": 892
+ },
+ "records": {
+  "total": 409,
+  "by_year": {
+   "2006": 3,
+   "2007": 7,
+   "2008": 2,
+   "2009": 7,
+   "2010": 3,
+   "2011": 1,
+   "2012": 8,
+   "2013": 1,
+   "2014": 6,
+   "2015": 4,
+   "2016": 58,
+   "2017": 77,
+   "2018": 96,
+   "2019": 22,
+   "2020": 24,
+   "2021": 47,
+   "2022": 21,
+   "2023": 9,
+   "2024": 4,
+   "2025": 3,
+   "2026": 4,
+   "unknown": 2
+  },
+  "by_type": {
+   "OTHER": 23,
+   "COMPULSORY": 156,
+   "VOLUNTARY_NO_EXIT": 106,
+   "IBC_NCLT": 121,
+   "VOLUNTARY_EXIT_OFFER": 3
+  },
+  "by_confidence": {
+   "NEEDS_REVIEW": 2,
+   "VERIFIED_PRIMARY": 407
+  },
+  "by_regime": {
+   "unknown": 2,
+   "SEBI_2003_Guidelines": 14,
+   "SEBI_2009_Regs": 328,
+   "SEBI_2021_Regs": 55,
+   "SEBI_2024_Amendment": 10
+  },
+  "priority_year_records": 124,
+  "priority_grid": {
+   "2007": {
+    "COMPULSORY": 0,
+    "VOLUNTARY_EXIT_OFFER": 0,
+    "VOLUNTARY_NO_EXIT": 7,
+    "AMALGAMATION_MERGER": 0,
+    "IBC_NCLT": 0
+   },
+   "2017": {
+    "COMPULSORY": 56,
+    "VOLUNTARY_EXIT_OFFER": 0,
+    "VOLUNTARY_NO_EXIT": 5,
+    "AMALGAMATION_MERGER": 0,
+    "IBC_NCLT": 11
+   },
+   "2020": {
+    "COMPULSORY": 4,
+    "VOLUNTARY_EXIT_OFFER": 0,
+    "VOLUNTARY_NO_EXIT": 9,
+    "AMALGAMATION_MERGER": 0,
+    "IBC_NCLT": 9
+   },
+   "2024": {
+    "COMPULSORY": 4,
+    "VOLUNTARY_EXIT_OFFER": 0,
+    "VOLUNTARY_NO_EXIT": 0,
+    "AMALGAMATION_MERGER": 0,
+    "IBC_NCLT": 0
+   }
+  },
+  "priority_grid_cells_filled": 8,
+  "priority_grid_cells_total": 20,
+  "field_completeness_pct": {
+   "isin": 0.2,
+   "nse_symbol": 97.8,
+   "effective_delisting_date": 96.8,
+   "order_date": 15.9,
+   "exit_or_fair_value_inr": 0.2
+  },
+  "years_covered": [
+   "2006",
+   "2007",
+   "2008",
+   "2009",
+   "2010",
+   "2011",
+   "2012",
+   "2013",
+   "2014",
+   "2015",
+   "2016",
+   "2017",
+   "2018",
+   "2019",
+   "2020",
+   "2021",
+   "2022",
+   "2023",
+   "2024",
+   "2025",
+   "2026"
+  ]
+ },
+ "audit": {
+  "errors": {},
+  "warnings": {
+   "no_date": 2,
+   "order_after_effective": 1,
+   "possible_duplicate_event": 12,
+   "review_flags": 21,
+   "source_conflicts": 53
+  }
+ },
+ "runs": [],
+ "agent_sessions": []
+}
